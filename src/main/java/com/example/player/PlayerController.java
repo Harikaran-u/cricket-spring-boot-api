@@ -10,7 +10,7 @@ import com.example.player.PlayerService;
 public class PlayerController {
     PlayerService newService = new PlayerService();
 
-    @GetMapping("/")
+    @GetMapping("/players")
     public ArrayList<Player> getPlayers() {
         return newService.getPlayers();
     }
